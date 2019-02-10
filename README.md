@@ -4,6 +4,7 @@ Welcome to **AAA-Discord-Bot**, a Discord bot that helps manage the AAA of ND Di
 
 ## Installations and Dependencies
 
+* virtualenv with [https://docs.python-guide.org/dev/virtualenvs/](https://docs.python-guide.org/dev/virtualenvs/)... `python3 -m virtualenv venv`
 * Python 3.4 - 3.6
 * discord.py==0.16.12
 
