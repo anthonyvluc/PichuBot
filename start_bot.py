@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-from pichu_bot import PICHU_BOT
+from pichubot import PichuBot
 
 def start_bot():
-  bot = PICHU_BOT()
+  bot = PichuBot()
   bot.load_commands()
   bot.load_events()
   bot.start()

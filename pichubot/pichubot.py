@@ -6,11 +6,11 @@ import os
 PREFIX = '!'
 TOKEN = os.environ['PICHU_TOKEN']
 
-"""Defines the AAA Bot class.
+"""Defines the PichuBot class.
 
 
 """
-class PICHU_BOT():
+class PichuBot():
   def __init__(self):
     self.bot = commands.Bot(command_prefix=PREFIX)
 
