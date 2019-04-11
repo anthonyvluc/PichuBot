@@ -1,10 +1,10 @@
-# Asian American Association of ND Discord Bot
+# Pichu Bot
 
-Welcome to **AAA-Discord-Bot**, a Discord bot that helps manage the AAA of ND Discord server!
+Welcome to **Pichu-Bot**, a Discord bot that helps manage the AAA of ND Discord server!
 
 ## Installations and Dependencies
 
-* virtualenv with [https://docs.python-guide.org/dev/virtualenvs/](https://docs.python-guide.org/dev/virtualenvs/)... `python3 -m virtualenv venv`
+* virtualenv with [https://docs.python-guide.org/dev/virtualenvs/](https://docs.python-guide.org/dev/virtualenvs/); install command: `python3 -m virtualenv venv`
 * Python 3.4 - 3.6
 * discord.py==0.16.12
 
@@ -20,5 +20,5 @@ Welcome to **AAA-Discord-Bot**, a Discord bot that helps manage the AAA of ND Di
 
 [https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc](https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc)
 
-## Contribution
-* Anthony Luc
+## Contributing
+* 
