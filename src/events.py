@@ -1,4 +1,3 @@
-
 """Loads events for the Discord bot.
 
 

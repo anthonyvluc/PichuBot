@@ -1,4 +1,4 @@
-import commands as aaa_cmds
+import commands as cmds
 from events import load_discord_events
 from discord.ext import commands
 import os
@@ -10,7 +10,7 @@ TOKEN = os.environ['PICHU_TOKEN']
 
 
 """
-class AAA_BOT():
+class PICHU_BOT():
   def __init__(self):
     self.bot = commands.Bot(command_prefix=PREFIX)
 
@@ -21,7 +21,7 @@ class AAA_BOT():
   def load_commands(self):
     # TODO: debug the commands not working
     print('Loading commands...')
-    cmds = [c for _, c in aaa_cmds.__dict__.items() if isinstance(c, commands.core.Command)]
+    cmds = [c for _, c in cmds.__dict__.items() if isinstance(c, commands.core.Command)]
     for c in cmds:
       self.bot.add_command(c)
 
