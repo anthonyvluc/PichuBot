@@ -1,32 +1,45 @@
-import commands as cmds
-from events import load_discord_events
-from discord.ext import commands
+# -*- coding: utf-8 -*-
+"""Defines the PichuBot class.
+
+This bot loads commands from a subdirectory which can be invoked with `!`.
+
+"""
+
 import os
+
+import commands as cmds
+from discord.ext import commands
+from events import load_discord_events
 
 PREFIX = '!'
 TOKEN = os.environ['PICHU_TOKEN']
 
-"""Defines the PichuBot class.
 
+class PichuBot(object):
 
-"""
-class PichuBot():
+    """The PichuBot class."""
+
     def __init__(self):
+        """Defines the initialization."""
         self.bot = commands.Bot(command_prefix=PREFIX)
 
     def start(self):
-        print('Starting bot...')
+        """Defines the startup."""
+        print 'Starting bot...'
+        self._load_commands()
+        self._load_events()
         self.bot.run(TOKEN)
 
-    def load_commands(self):
+    def _load_commands(self, directory):
+        """Loads bot commands from a given subdirectory."""
         # TODO: debug the commands not working
-        print('Loading commands...')
-        bot_cmds = [cmd for _, cmd in cmds.__dict__.items() if isinstance(cmd, commands.core.Command)]
+        # TODO: load from directory
+        print 'Loading commands...'
+        bot_cmds = [cmd for _, cmd in cmds.__dict__.items()
+                    if isinstance(cmd, commands.core.Command)]
         for cmd in bot_cmds:
             self.bot.add_command(cmd)
 
-    def add_command(self, cmd):
-        self.bot.add_command(cmd)
-
-    def load_events(self):
+    def _load_events(self):
+        """Loads bot events from a given subdirectory."""
         load_discord_events(self.bot)

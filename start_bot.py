@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+"""Main driver to start bot."""
 
 from pichubot import PichuBot
 
 def start_bot():
+    """Start Pichu bot."""
     bot = PichuBot()
-    bot.load_commands()
-    bot.load_events()
     bot.start()
 
 if __name__ == '__main__':

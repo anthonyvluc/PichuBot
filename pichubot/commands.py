@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""Defines commands for the Discord bot.
+
+Each function is its own command.
+
+"""
+
 from discord.ext import commands
 
 """test
