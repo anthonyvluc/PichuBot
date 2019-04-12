@@ -17,7 +17,6 @@ TOKEN = os.environ['PICHU_TOKEN']
 
 
 class PichuBot(object):
-
     """The PichuBot class."""
 
     def __init__(self):
@@ -32,12 +31,14 @@ class PichuBot(object):
         self.bot.run(TOKEN)
 
     def _load_commands(self, directory):
-        """
-        Loads bot commands from a given directory.
+        """ Loads bot commands from a given directory.
+
+        Iterates through the files of a given directory and loads them as
+        custom commands.
+
         Args:
             directory (str): directory's name of command files
-        Returns:
-            None
+
         """
         # TODO: debug the commands not working
         # TODO: load from directory

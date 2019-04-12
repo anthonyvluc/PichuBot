@@ -10,16 +10,21 @@ from __future__ import print_function
 from discord.ext import commands
 
 """pichu
+
 Say something Pichu!
+
 """
 @commands.command(pass_context=True)
 async def pichu(ctx):
     await ctx.send('Pichu pichu!')
 
-"""test
+"""echo
+
 Pichu is a parrot
+
 Args:
     msg (str): passed in message
+
 """
 @commands.command(pass_context=True)
 async def echo(ctx, msg=None):
