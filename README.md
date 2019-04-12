@@ -19,13 +19,6 @@ bot = PichuBot()
 bot.start()
 ```
 
-## Python Libraries Used
-* [discord.py](https://pypi.org/project/discord.py/)
-
-## Resources
-
-[https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc](https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc)
-
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Make sure to check your code with `pylint`.
