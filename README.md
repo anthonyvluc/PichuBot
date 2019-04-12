@@ -1,17 +1,23 @@
-# Pichu Bot
+# PichuBot
 
-Welcome to **Pichu-Bot**, a Discord bot that helps manage the AAA of ND Discord server!
+Welcome to **PichuBot**, a Discord bot that helps manage the AAA of ND Discord server!
 
-## Installations and Dependencies
+## Installation
 
-* virtualenv with [https://docs.python-guide.org/dev/virtualenvs/](https://docs.python-guide.org/dev/virtualenvs/); install command: `python3 -m virtualenv venv`
-* Python 3.4 - 3.6
-* discord.py==0.16.12
+1) Use `venv` to create a virtual environment.
+2) Install dependencies using `pip install -r requirements.txt`.
+3) Set an environment variable called 'PICHU_TOKEN' with the bot's token.
 
-## How to Run
+## Usage
+ 
+You can run `start_bot.py`, or you can import like so
 
-1) Set an environment variable 'PICHU_TOKEN' with the bot's token.
-2) Run `start_bot.py`.
+```python
+from pichubot import PichuBot
+
+bot = PichuBot()
+bot.start()
+```
 
 ## Python Libraries Used
 * [discord.py](https://pypi.org/project/discord.py/)
@@ -21,4 +27,8 @@ Welcome to **Pichu-Bot**, a Discord bot that helps manage the AAA of ND Discord 
 [https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc](https://gist.github.com/4Kaylum/a1e9f31c31b17386c36f017d3c59cdcc)
 
 ## Contributing
-* 
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Make sure to check your code with `pylint`.
+
+## License
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

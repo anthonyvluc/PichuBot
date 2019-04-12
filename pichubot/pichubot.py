@@ -32,7 +32,13 @@ class PichuBot(object):
         self.bot.run(TOKEN)
 
     def _load_commands(self, directory):
-        """Loads bot commands from a given subdirectory."""
+        """
+        Loads bot commands from a given directory.
+        Args:
+            directory (str): directory's name of command files
+        Returns:
+            None
+        """
         # TODO: debug the commands not working
         # TODO: load from directory
         print('Loading commands...')

@@ -10,23 +10,20 @@ from __future__ import print_function
 from discord.ext import commands
 
 """pichu
-
 Say something Pichu!
-
 """
 @commands.command(pass_context=True)
-async def pichu(ctx, arg=None):
-    if arg is not None:
-        await ctx.send(arg)
-    else:
-        await ctx.send('Missing parameter!')
+async def pichu(ctx):
+    await ctx.send('Pichu pichu!')
 
 """test
-
-TODO
+Pichu is a parrot
+Args:
+    msg (str): passed in message
 """
-# @commands.command(pass_context=True)
-# async def test2():
-#     pass
-
-
+@commands.command(pass_context=True)
+async def echo(ctx, msg=None):
+    if msg is not None:
+        await ctx.send(msg)
+    else:
+        await ctx.send('Missing parameter!')
