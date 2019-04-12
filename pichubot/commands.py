@@ -5,6 +5,8 @@ Each function is its own command.
 
 """
 
+from __future__ import print_function
+
 from discord.ext import commands
 
 """test

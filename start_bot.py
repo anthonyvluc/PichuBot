@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Main driver to start bot."""
 
-from pichubot import PichuBot
+from pichubot.pichubot import PichuBot
 
 def start_bot():
     """Start Pichu bot."""
