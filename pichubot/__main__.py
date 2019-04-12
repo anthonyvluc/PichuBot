@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Main driver to start bot."""
 
-from pichubot.pichubot import PichuBot
+from pichubot import PichuBot
 
 def start_bot():
     """Start Pichu bot."""

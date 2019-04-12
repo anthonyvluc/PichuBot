@@ -8,9 +8,9 @@ This bot loads commands from a subdirectory which can be invoked with `!`.
 from __future__ import print_function
 import os
 
-import pichubot.commands as cmds
+import commands as cmds
 from discord.ext import commands
-from pichubot.events import load_discord_events
+from events import load_discord_events
 
 PREFIX = '!'
 TOKEN = os.environ['PICHU_TOKEN']
