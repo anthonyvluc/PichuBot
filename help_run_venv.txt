@@ -1,2 +1,5 @@
 # Run this for your virtualenv.
 source venv/bin/activate
+
+# Run this to stop.
+deactivate
