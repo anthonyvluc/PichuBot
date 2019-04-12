@@ -6,7 +6,7 @@ Welcome to **PichuBot**, a Discord bot that helps manage the AAA of ND Discord s
 
 1) Use `venv` to create a virtual environment.
 2) Install dependencies using `pip install -r requirements.txt`.
-3) Set an environment variable called 'PICHU_TOKEN' with the bot's token.
+3) Set an environment variable called `PICHU_TOKEN` with the bot's token.
 
 ## Usage
  
