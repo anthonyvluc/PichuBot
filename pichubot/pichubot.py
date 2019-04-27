@@ -49,4 +49,5 @@ class PichuBot(object):
 
     def _load_events(self, directory=None):
         """Loads bot events from a given directory."""
+        print('Loading events...')
         load_discord_events(self.bot)
