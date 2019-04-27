@@ -26,12 +26,12 @@ class PichuBot(object):
     def start(self):
         """Defines the startup."""
         print('Starting bot...')
-        self._load_commands('DIRECTORY')
+        self._load_commands()
         self._load_events()
         self.bot.run(TOKEN)
 
-    def _load_commands(self, directory):
-        """ Loads bot commands from a given directory.
+    def _load_commands(self, directory=None):
+        """Loads bot commands from a given directory.
 
         Iterates through the files of a given directory and loads them as
         custom commands.
@@ -40,14 +40,13 @@ class PichuBot(object):
             directory (str): directory's name of command files
 
         """
-        # TODO: debug the commands not working
-        # TODO: load from directory
+        # TODO: load from directory of command files
         print('Loading commands...')
         bot_cmds = [cmd for _, cmd in cmds.__dict__.items()
                     if isinstance(cmd, commands.core.Command)]
         for cmd in bot_cmds:
             self.bot.add_command(cmd)
 
-    def _load_events(self):
-        """Loads bot events from a given subdirectory."""
+    def _load_events(self, directory=None):
+        """Loads bot events from a given directory."""
         load_discord_events(self.bot)
