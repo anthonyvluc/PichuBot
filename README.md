@@ -1,5 +1,9 @@
 # PichuBot
 
+<img src="https://github.com/anthonyvluc/PichuBot/raw/master/assets/pichu-icon.png" width="100">
+
+---
+
 Welcome to **PichuBot**, a Discord bot that helps manage the AAA of ND Discord server!
 
 ## Installation
