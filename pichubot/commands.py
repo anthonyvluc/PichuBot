@@ -50,3 +50,22 @@ async def roll(ctx, sides=None):
     # TODO: no handling of user error if sides is a word not number
     # maybe abstract an exception catcher
     await ctx.send(randrange(int(sides))+1)
+
+"""flip
+
+Pichu flips a table
+
+
+"""
+@commands.command(pass_context=True)
+async def flip(ctx):
+    await ctx.send("""
+/ \ / \
+\ /_\ /
+(o^.^o)
+  (>)>  
+  u u\  ┻━┻
+"""
+
+
+
