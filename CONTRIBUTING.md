@@ -1,6 +1,6 @@
 # Contributing to PichuBot
 
-1) Use `virtualenv` to create a virtual environment with Python version 3.6.4.
+1) Use `virtualenv` to create a virtual environment with Python version 3.6.4. Use `source venv/bin/activate` and `deactivate` to start and stop the virtual environment.
 2) Install dependencies using `pip install -r requirements.txt`.
 3) Set an environment variable called `PICHU_TOKEN` with the bot's token. (Note: create a test bot on your own server to test your changes)
 
