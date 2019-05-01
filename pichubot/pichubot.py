@@ -6,29 +6,25 @@ This bot loads commands from a subdirectory which can be invoked with `!`.
 """
 
 from __future__ import print_function
-import os
 
 import commands as cmds
 from discord.ext import commands
 from events import load_discord_events
 
-PREFIX = '!'
-TOKEN = os.environ['PICHU_TOKEN']
-
 
 class PichuBot(object):
     """The PichuBot class."""
 
-    def __init__(self):
+    def __init__(self, prefix):
         """Defines the initialization."""
-        self.bot = commands.Bot(command_prefix=PREFIX)
+        self.bot = commands.Bot(command_prefix=prefix)
 
-    def start(self):
+    def start(self, token):
         """Defines the startup."""
         print('Starting bot...')
         self._load_commands()
         self._load_events()
-        self.bot.run(TOKEN)
+        self.bot.run(token)
 
     def _load_commands(self, directory=None):
         """Loads bot commands from a given directory.
