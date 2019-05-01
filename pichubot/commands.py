@@ -60,12 +60,14 @@ Pichu flips a table
 @commands.command(pass_context=True)
 async def flip(ctx):
     await ctx.send("""
-/ \ / \
-\ /_\ /
+```
+ /\\ /\\
+ \\/_\\/
 (o^.^o)
-  (>)>  
-  u u\  ┻━┻
-"""
+ (> )>  
+ /uu  ┻━┻
+```
+""")
 
 
 
