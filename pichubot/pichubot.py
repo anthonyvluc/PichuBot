@@ -15,7 +15,7 @@ from events import load_discord_events
 class PichuBot(object):
     """The PichuBot class."""
 
-    def __init__(self, prefix):
+    def __init__(self, prefix='!'):
         """Defines the initialization."""
         self.bot = commands.Bot(command_prefix=prefix)
 

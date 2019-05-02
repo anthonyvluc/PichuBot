@@ -17,7 +17,7 @@ You can run `start_bot.py`, or you can import like so
 ```python
 from pichubot import PichuBot
 
-bot = PichuBot('!')
+bot = PichuBot()
 bot.start(PICHU_TOKEN)
 ```
 

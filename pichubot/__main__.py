@@ -8,12 +8,11 @@ from pichubot import PichuBot
 
 load_dotenv()
 
-PREFIX = '!'
 TOKEN = os.environ['PICHU_TOKEN']
 
 def start_bot():
     """Start Pichu bot."""
-    bot = PichuBot(PREFIX)
+    bot = PichuBot()
     bot.start(TOKEN)
 
 if __name__ == '__main__':
