@@ -1,6 +1,6 @@
 # PichuBot
 
-<img src="https://github.com/anthonyvluc/PichuBot/raw/master/assets/pichu-icon.png" width="100">
+<img src="https://github.com/anthonyvluc/PichuBot/raw/master/assets/pichu-icon.png" width="256">
 
 ---
 
