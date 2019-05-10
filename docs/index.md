@@ -6,7 +6,7 @@ title: PichuBot - A Discord Bot
 
 # PROJECT GOALS
 
-![PichuBot Gif](InsertGifHere)
+![PichuBot Image](pichubot.png)
 
 The [Asian American Association](https://www3.nd.edu/~aaa/) community at the University of Notre Dame looks to create a welcoming environment for all of its members, those who are 0 - 100% Asian. AAA is an umbrella club of many smaller cultural student associations with a more narrowed focus. Through [Discord](https://discordapp.com/), the club hopes to provide a common platform to connect its undergraduate members, retain communication with alumni, and spread information about AAA and ND events on campus.  
 
